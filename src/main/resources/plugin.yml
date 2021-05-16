@@ -1,0 +1,6 @@
+name: CTF
+version: ${project.version}
+main: com.intelligentcake.ctf.CTF
+api-version: 1.16
+authors: [ IntelligentCake ]
+description: A simple Capture The Flag plugin for Paper
