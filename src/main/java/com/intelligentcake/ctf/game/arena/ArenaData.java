@@ -53,7 +53,7 @@ public class ArenaData {
     // <playerName arena>
     public static HashMap<String, String> spectator = new HashMap<String, String>();
 
-    public int BelongTeam(String name) {
+    public static int BelongTeam(String name) {
         if(playerStatus.containsKey(name)) {
             ArrayList<String> list = playerList.get(playerStatus.get(name)).get(1);
             for(String s : list) {
