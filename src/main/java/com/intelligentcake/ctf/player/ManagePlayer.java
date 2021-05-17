@@ -2,6 +2,7 @@ package com.intelligentcake.ctf.player;
 
 import com.intelligentcake.ctf.CTF;
 import com.intelligentcake.ctf.game.ScoreboardControl;
+import com.intelligentcake.ctf.game.WaitCTF;
 import com.intelligentcake.ctf.game.arena.ArenaData;
 import org.bukkit.*;
 import org.bukkit.enchantments.Enchantment;
@@ -146,6 +147,7 @@ public class ManagePlayer<EntityPlayer> {
                 if(cn>99) {
                     //already playing
                     Broadcast(arena + "'s game is cancelled because there aren't enough players.", ChatColor.RED);
+                    // TODO: Implement finish game
                     new FinishCTF().Finished(arena, plugin, true);
                 }else if(cn>-2) {
                     Broadcast(arena + "'s countdown is cancelled because there aren't enough players.", ChatColor.RED);
@@ -179,7 +181,7 @@ public class ManagePlayer<EntityPlayer> {
                     pinv.setChestplate(ListToItem(lst));
                 case 3:
                     pinv.setHelmet(ListToItem(lst));
-                    //i++ is not writeen but its ok for escape error
+                    //i++ is not written but its ok for escape error
             }
         }else {
             pinv.addItem(ListToItem(lst));
