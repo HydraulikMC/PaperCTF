@@ -32,7 +32,7 @@ public class WaitCTF extends BukkitRunnable {
             this.cancel();
         } else if (c == 0) {
             ArenaData.arenaStatus.put(arena, 130);
-            // TODO: Implement game execution
+            new PlayCTF(arena, plugin, world).runTaskTimer(plugin, 100, 200); // debug
         } else if (c > 100) {
             this.cancel();
         } else {
