@@ -1,6 +1,14 @@
 name: CTF
-version: ${project.version}
+version: 0.2.1
+description: This plugin is to play ctf
+
+author: Intelligent_Cake
+
 main: com.intelligentcake.ctf.CTF
-api-version: 1.16
-authors: [ IntelligentCake ]
-description: A simple Capture The Flag plugin for Paper
+
+commands:
+  ctf:
+    description: This is CTF Commands.
+    aliases: [ctf]
+    permission: ctf.ctf
+    usage: /ctf
