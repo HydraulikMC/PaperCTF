@@ -1,14 +1,14 @@
 name: CTF
-version: 0.2.1
+version: 1.0
 description: This plugin is to play ctf
 
 author: Intelligent_Cake
 
 main: com.intelligentcake.ctf.CTF
+api-version: 1.17
 
 commands:
-  ctf:
+  team:
     description: This is CTF Commands.
-    aliases: [ctf]
-    permission: ctf.ctf
-    usage: /ctf
+    aliases: [ctfteam]
+    usage: /ctfteam
